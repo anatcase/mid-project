@@ -62,6 +62,7 @@ footer {
     position: absolute;
     top:32px;
     right:0;
+    z-index:999;
 }
 
 .row {
