@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -15,13 +17,14 @@ header {
     width:100%;
     height: 105px;
     background: rgb(144,144,144);
-    background: -moz-linear-gradient(180deg, rgba(144,144,144,1) 80%, rgba(149,149,149,1) 90%, rgba(169,169,169,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(144,144,144,1) 80%, rgba(149,149,149,1) 90%, rgba(169,169,169,1) 100%);
-    background: linear-gradient(180deg, rgba(144,144,144,1) 80%, rgba(149,149,149,1) 90%, rgba(169,169,169,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#909090",endColorstr="#a9a9a9",GradientType=1);
+    background: -moz-linear-gradient(180deg, rgba(144,144,144,1) 85%, rgba(152,151,151,1) 90%, rgba(191,186,186,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(144,144,144,1) 85%, rgba(152,151,151,1) 90%, rgba(191,186,186,1) 100%);
+    background: linear-gradient(180deg, rgba(144,144,144,1) 85%, rgba(152,151,151,1) 90%, rgba(191,186,186,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#909090",endColorstr="#bfbaba",GradientType=1);
 }
 
 main {
+    width:100%;
     background-color: white;
 }
 
@@ -39,21 +42,46 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#928c8c",endColorstr="#a7a7a7",GradientType=1);
 }
 
-.top-wrapper, .bottom-wrapper {
-    width:100%;
+.top-wrapper, .mid-wrapper, .bottom-wrapper {
+    width:68%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top-wrapper {
+    text-align:center;
+    height:100%;
+}
+
+.bottom-wrapper{
+    line-height: 38px;
+    text-align: center;
 }
 
 .mid-wrapper {
-    width:80%;
-    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
 }
 
-.row {
-width:100%;
+.logo {
+    position: absolute;
+    top:32px;
+    right:0;
+}
+
+header .row {
+    width:100%;
+    padding: 18px 0;
+    text-align: left;
+    height: 50%;
+}
+
+.top-wrapper > div:first-of-type {
+    padding-left: 14px;
 }
 
 .column {
- width:33%;
+    width:33%;
 }
 
 .flex-container {
@@ -63,3 +91,221 @@ width:100%;
 .flex-column {
     flex-direction: column;
 }
+
+a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#005ca0;
+    text-decoration: underline;
+}
+
+#topNav {
+    list-style: none; 
+    height:33px;
+}
+
+#topNav > li {
+    padding: 0px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    height:100%;   
+} 
+
+#topNav li.divider {
+    padding: 0px;
+    color:#b5a9a9;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(115, 114, 114, 0.48);
+}
+
+   
+#topNav > li > a#home {
+    width:17px;
+    height: 15px;
+    padding: 0;
+    background: url(/images/menu_home.png) 17px 0;
+}
+
+#topNav > li > a#home:hover {
+    background: url(/images/menu_home.png) 0 0;
+}
+
+#topNav > li > a, .dropdown-content > a {
+    display:block;
+    width: 100%;
+    height:100%;
+    font-weight: bold;
+    font-size: 15px;  
+}
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: rgb(144,144,144);
+    background: -moz-linear-gradient(0deg, rgba(144,144,144,1) 90%, rgba(191,186,186,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(144,144,144,1) 90%, rgba(191,186,186,1) 100%);
+    background: linear-gradient(0deg, rgba(144,144,144,1) 90%, rgba(191,186,186,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#909090",endColorstr="#bfbaba",GradientType=1);
+}
+
+  .dropdown:hover > .dropdown-content {
+    display: block;
+    text-align: right;
+  }
+  
+  .dropdown-content > a {
+    padding: 5px;
+    border-bottom: 1px solid #bfbaba;
+    white-space: nowrap;
+  }
+
+  .dropdown-content > a:last-child {
+      border: none;
+  }
+
+  .dropdown-content > a:hover {
+   background-color: #bcbcbc;
+  }
+  
+    #langBar {
+        padding-left:12px;
+    }
+
+    #searchBox, #langBar {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #searchBox input {
+        display: inline-block;
+        vertical-align: middle;
+        height: 19px;
+    }
+
+    #searchBox .search-box {
+        width: 132px;
+        padding: 4px;
+        border: 1px solid #1d18184d;
+        border-top-right-radius: 6px;
+    }
+
+    #searchBox .search-btn {
+        width: 19px;
+    }
+
+    article.column {
+        position: relative;
+        height: 355px;
+        padding: 0 6px;
+    }
+
+    article.column > img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-bottom-right-radius: 20px;
+    }
+
+    article.column > .text-container {
+        position: absolute;
+        width: 85%;
+        right:12px;
+        bottom: 6px;
+        overflow: hidden;
+        min-height: 112px;
+        padding: 8px;
+        text-align: right;
+        background: #797979e0;
+        -webkit-border-bottom-right-radius: 25px;
+        -moz-border-radius-bottomright: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .read-more {
+        font-size:12px;
+        float: left;
+        text-decoration: underline;
+        font-size: 12px;
+        position: absolute;
+        left: 8px;
+        bottom: 4px;
+    }
+
+    .read-more::after {
+        content: url(images/read_more_white.png);
+    }
+
+    .read-more:hover::after {
+        content: url(images/read_more_blue.png);
+    }
+
+    .text-container h3 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .text-container p {
+        font-size: 13px;
+        padding: 4px 0;
+    }
+
+    article.small-box > img {
+        width: 80%;
+        height: auto;
+        border-radius: unset;
+        margin: auto;
+    }
+
+    article.small-box h3 {
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+
+    article.small-box .text-container {
+        background: none;
+    }
+
+    footer a {
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    footer nav {
+        padding-top: 3px;
+    }
+    
+
+    footer nav a:last-child {
+        color:#d00000;
+    }
+
+    footer nav a:last-child:hover {
+        color: #005ca0;
+    }
+   
+    footer span.divider {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .fb-icon{
+        background: url(/images/fb_icon.png) no-repeat 0 0;
+        width: 18px;
+        height: 18px;
+        margin-left: 5px;
+    }

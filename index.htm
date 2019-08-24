@@ -2,6 +2,7 @@
 <html lang="he">
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="myScript.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,31 +12,38 @@
     <body>
         <header>
             <div class="top-wrapper">
-                <a class="logo" href="images/paz_logo.png" alt="פז"></a>
+                <a class="logo" href="#"><img src="images/paz_logo.png" alt="פז"></a>
                 <div class="row">
                     <div id="langBar">
                         English
                     </div>
                     <div id="searchBox">
-                        <input name="Top1$SearchBox1$SearchTextBox" type="text" value="רשום מילת חיפוש" id="Top1_SearchBox1_SearchTextBox" onfocus="this.value = ''" onblur="resetSearch()">
-                        <a href="#">&nbsp;&nbsp;</a>
+                        <form action="#">
+                            <input class="search-box" type="text-container" placeholder="רשום מילת חיפוש" name="search">
+                            <input class="search-btn" type="image" src="/images/search_button.png" alt="חפש" name="submit" />
+                        </form>
+                        <a href="#"></a>
                     </div>
                 </div>
                 <nav class="row">
-                    <ul> 
-                        <li><a href="#" target="_blank"><img src="images/menu_home.png" alt="בית"></a></li>
+                    <ul id="topNav">
+                        <li>
+                            <a href="#" id="home" target="_blank"></a>
+                        </li>
+                        <li class="divider">|</li>
                         <li class="dropdown">
                             <a href="javascript:void(0)" target="_blank">אודות</a>
-                                <div class="dropdown-content">
-                                    <a href="about.html" target="_blank">אודות</a>
-                                    <a href="#" target="_blank">היסטוריה</a>
-                                    <a href="#" target="_blank">חזון וערכים</a>
-                                    <a href="#" target="_blank">מבנה הקבוצה</a>
-                                    <a href="#" target="_blank">חברי דירקטוריון</a>
-                                    <a href="#" target="_blank">הנהלת הקבוצה</a>
-                                    <a href="#" target="_blank">פרסים והוקרה</a>
-                                </div>
+                            <div class="dropdown-content">
+                                <a href="about.html" target="_blank">אודות</a>
+                                <a href="#" target="_blank">היסטוריה</a>
+                                <a href="#" target="_blank">חזון וערכים</a>
+                                <a href="#" target="_blank">מבנה הקבוצה</a>
+                                <a href="#" target="_blank">חברי דירקטוריון</a>
+                                <a href="#" target="_blank">הנהלת הקבוצה</a>
+                                <a href="#" target="_blank">פרסים והוקרה</a>
+                            </div>
                         </li>
+                        <li class="divider">|</li>
                         <li class="dropdown">
                                 <a href="javascript:void(0)" target="_blank">חטיבות</a>
                                     <div class="dropdown-content">
@@ -43,11 +51,9 @@
                                         <a href="#" target="_blank">קמעונאות ומסחר</a>
                                         <a href="#" target="_blank">תעשיות ושירותים</a>
                                         <a href="#" target="_blank">זיקוק</a>
-                                        <a href="#" target="_blank">חברי דירקטוריון</a>
-                                        <a href="#" target="_blank">הנהלת הקבוצה</a>
-                                        <a href="#" target="_blank">פרסים והוקרה</a>
                                     </div>
                         </li>
+                        <li class="divider">|</li>
                         <li class="dropdown">
                                 <a href="javascript:void(0)" target="_blank">אחריות תאגידית</a>
                                     <div class="dropdown-content">
@@ -59,6 +65,7 @@
                                         <a href="#" target="_blank">דירוג מעלה</a>
                                     </div>
                         </li>
+                        <li class="divider">|</li>
                         <li class="dropdown">
                                 <a href="#" target="_blank">קשרי משקיעים</a>
                                     <div class="dropdown-content">
@@ -69,6 +76,7 @@
                                         <a href="#" target="_blank">אסיפות כלליות</a>
                                     </div>
                         </li>
+                        <li class="divider">|</li>
                         <li class="dropdown">
                                 <a href="javascript:void(0)" target="_blank">התחנות שלנו</a>
                                     <div class="dropdown-content">
@@ -78,6 +86,7 @@
                                         <a href="#" target="_blank">מועדונים</a>
                                     </div>
                         </li>
+                        <li class="divider">|</li>
                         <li class="dropdown">
                                 <a href="#" target="_blank">קריירה</a>
                                     <div class="dropdown-content">
@@ -86,6 +95,7 @@
                                         <a href="#" target="_blank">קריירה</a>
                                     </div>
                         </li>
+                        <li class="divider">|</li>
                         <li class="dropdown">
                                 <a href="#" target="_blank">חדשות ומדיה</a>
                                     <div class="dropdown-content">
@@ -99,62 +109,62 @@
         </header> 
         <main>
             <div class="mid-wrapper">
-                <section class="row">
-                <article class="tab">
-                    <img class="bg" src="images/1908364606615453350.JPG" alt="קמעונאות ומסחר">
-                    <div class="text fc">
-                        <h3>קמעונאות ומסחר</h3>
-                        <p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</p>
-                        <a href="#" class="readMore white" target="_blank">
-                            <span>קרא עוד</span>
-                        </a>
-                    </div>
-                </article>
-                <article class="tab">
-                    <img class="bg" src="images/Picture-046410251500.jpg" alt="זיקוק">
-                    <div class="text fc">
-                        <h3>זיקוק</h3>
-                        <p>פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...</p>
-                        <a href="#" class="readMore white" target="_blank">
-                            <span>קרא עוד</span>
-                        </a>
-                    </div>
-                </article>
-                <article class="tab">
-                    <img class="bg" src="images/פזקר_-291_354410564000.jpg" alt="תעשיות ושירותים">
-                    <div class="text fc">
-                        <h3>תעשיות ושירותים</h3>
-                        <p>תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...</p>
-                        <a href="#" class="readMore white" target="_blank">
-                            <span>קרא עוד</span>
-                        </a>
-                    </div>
-                </article>
+                <section class="row flex-container">
+                    <article class="column">
+                        <img class="bg" src="images/1908364606615453350.jpg" alt="קמעונאות ומסחר">
+                        <div class="text-container">
+                            <h3>קמעונאות ומסחר</h3>
+                            <p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</p>
+                            <a href="#" class="read-more" target="_blank">
+                                <span>קרא עוד</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="column">
+                        <img class="bg" src="images/Picture-046410251500.jpg" alt="זיקוק">
+                        <div class="text-container">
+                            <h3>זיקוק</h3>
+                            <p>פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...</p>
+                            <a href="#" class="read-more" target="_blank">
+                                <span>קרא עוד</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="column">
+                        <img class="bg" src="images/פזקר_-291_354410564000.jpg" alt="תעשיות ושירותים">
+                        <div class="text-container">
+                            <h3>תעשיות ושירותים</h3>
+                            <p>תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...</p>
+                            <a href="#" class="read-more" target="_blank">
+                                <span>קרא עוד</span>
+                            </a>
+                        </div>
+                    </article>
             </section>
-            <section class="row">
-                <article class="column">
+            <section class="row flex-container">
+                <article class="column small-box">
                     <h3>כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
                     <img class="bg" alt="כרטיס אשראי שופרסל וכרטיס אשראי יש " src="images/paz_250x110059890678.jpg">
-                    <div class="text fc">
+                    <div class="text-container">
                         <a href="#" id="ctl00_A1" class="readMore yellow" target="_blank">
                             <span>לפרטים נוספים</span>
                         </a>
                     </div>
                 </article>
-                <article class="column">
+                <article class="column small-box">
                         <h3>yellow click&amp;pick</h3>
                         <img class="bg" alt="yellow click & pick" src="images/250X110571325734.jpg">
-                        <div class="text fc">
+                        <div class="text-container">
                             <a href="#" id="ctl00_A1" class="readMore yellow" target="_blank">
                                 <span>לפרטים נוספים</span>
                             </a>
                         </div>
                 </article>
-                <article class="column">
+                <article class="column small-box">
                     <h3>התחנות שלנו בדרך שלך</h3>
                     <div class="fc">
                         <img src="images/Untitled-3058756287.jpg" alt="התחנות שלנו בדרך שלך">
-                        <div class="text">
+                        <div class="text-container">
                             <a href="#" class="readMore yellow" target="_self">
                                 <span>צפון</span>
                             </a>
@@ -173,15 +183,15 @@
         <footer>
             <div class="bottom-wrapper">
                 <nav>
-                    <a href="#"><img src="images/fb_icon.png" alt="חפשו אותנו בפייסבוק"></a>
-                    <a href="#">עמוד הבית</a>
-                    <a href="#">מחירונים</a>
-                    <a href="#">קריירה</a>
-                    <a href="#">תנאי שימוש</a>
-                    <a href="#">נגישות</a>
-                    <a href="#">מפת אתר</a>
-                    <a href="contact.htm">צור קשר</a>
-                    <a href="#">שטחי מסחר</a>
+                    <a class="fb-icon" href="http://www.facebook.com/YellowPaz" target="_blank"></a><span class="divider">|</span>
+                    <a href="#">עמוד הבית</a> <span class="divider">|</span>
+                    <a href="#">מחירונים</a> <span class="divider">|</span>
+                    <a href="#">קריירה</a> <span class="divider">|</span>
+                    <a href="#">תנאי שימוש</a> <span class="divider">|</span>
+                    <a href="#">נגישות</a> <span class="divider">|</span>
+                    <a href="#">מפת אתר</a> <span class="divider">|</span>
+                    <a href="contact.htm">צור קשר</a> <span class="divider">|</span>
+                    <a href="#">שטחי מסחר</a> <span class="divider">|</span>
                     <a href="#">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a>
                 </nav>
             </div>
