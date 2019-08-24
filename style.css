@@ -417,9 +417,17 @@ a:hover {
         background: url(images/side_menu_bg.png) no-repeat 0 0;  
     }
 
-    .bread-crumbs > a , span {
+    .bread-crumbs {
+        text-align:right;
+    }
+
+    .bread-crumbs > a, .bread-crumbs > span {
         font-size: 12px;
         color: #5c5c5c;
+    }
+
+    .bread-crumbs > a:hover {
+        color: #005ca0;
     }
 
     .bread-crumbs > a:after {
