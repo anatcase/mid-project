@@ -141,11 +141,11 @@ a:hover {
     width:17px;
     height: 15px;
     padding: 0;
-    background: url(/images/menu_home.png) 17px 0;
+    background: url(images/menu_home.png) 17px 0;
 }
 
 #topNav > li > a#home:hover {
-    background: url(/images/menu_home.png) 0 0;
+    background: url(images/menu_home.png) 0 0;
 }
 
 #topNav > li > a, .dropdown-content > a {
@@ -389,7 +389,7 @@ a:hover {
     }
 
     .fb-icon{
-        background: url(/images/fb_icon.png) no-repeat 0 0;
+        background: url(images/fb_icon.png) no-repeat 0 0;
         width: 18px;
         height: 18px;
         margin-left: 5px;
