@@ -210,7 +210,7 @@ a:hover {
 
     #searchBox .search-box {
         width: 132px;
-        padding: 4px;
+        padding: 0 4px;
         border: 1px solid #1d18184d;
         border-top-right-radius: 6px;
     }
