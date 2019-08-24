@@ -240,7 +240,7 @@ a:hover {
         min-height: 112px;
         padding: 8px;
         text-align: right;
-        background: #797979e0;
+        background-color: rgba(132,134,134,0.9);
         -webkit-border-bottom-right-radius: 25px;
         -moz-border-radius-bottomright: 25px;
         border-bottom-right-radius: 25px;
