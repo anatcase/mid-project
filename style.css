@@ -427,7 +427,11 @@ a:hover {
         background: url(images/side_menu_bg.png) no-repeat 0 0;  
     }
 
-    #contact .form-container {
+    #contact .side-nav > a:hover {
+        color:#005CA0;
+    }
+
+    #contact .form-container, .text-box {
         color:#72716d;
         text-align: right;
         padding: 14px 20px 20px 20px;
@@ -435,7 +439,6 @@ a:hover {
         border-width: 1px;
         border-color: #CCCCCC;
         width: 88%;
-        min-height: 332px;
         background: #ffffff;
         background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 49%, #f7f7f7 51%, #ececec 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#f7f7f7), color-stop(51%,#f7f7f7), color-stop(100%,#ececec));
@@ -449,10 +452,23 @@ a:hover {
         -moz-border-radius-topright: 20px;
     }
 
-    #contact .form-container h2 {
+    #contact .form-container h2, .text-box h2{
         color: #005ca0;
         font-weight: bold;
         font-size: 15px;
+    }
+
+    #contact .text-box {
+        border: 2px solid #ebebeb;
+        height: 172px;
+        margin-bottom: 30px;
+        width:292px;
+    }
+    
+    .text-box h2 {
+        border-bottom: 2px solid #ebebeb;
+        padding-bottom: 4px;
+        margin-bottom: 2px;
     }
 
     .bread-crumbs {
@@ -482,7 +498,7 @@ a:hover {
     }
 
     #contactFrm .form-item {
-        padding: 10px 0 ;
+        padding: 5px 0 ;
     }
 
     #contactFrm .form-item label, input {
@@ -515,12 +531,32 @@ a:hover {
         padding-bottom: 10px;
     }
 
-    #contact .form-container > p {
+    .text-box p.details {
+        font-weight: normal;
+    }
+
+    .text-box p > a {
+        color: rgb(0, 0, 238);
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: normal;
+        display:block;
+    }
+
+    .text-box p > a:hover {
+        text-decoration: underline;
+    }
+
+    #contact .form-container > p , .text-box p {
         font-size:13px;
         color:#6d6d6d;
         font-weight: bold;
         line-height: 1.2;
         padding: 5px 0;
+    }
+
+    .text-box p {
+        padding: 0;
     }
 
     #contactFrm button.submit {
@@ -540,3 +576,8 @@ a:hover {
         background: linear-gradient(180deg, rgba(95,186,225,1) 10%, rgba(2,86,142,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fbae1",endColorstr="#02568e",GradientType=1);
     }
+
+    .tabs-container {
+        padding:52px 30px 0 0;
+    }
+    
