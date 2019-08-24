@@ -430,7 +430,7 @@ a:hover {
     #contact .form-container {
         color:#72716d;
         text-align: right;
-        padding: 14px 20px;
+        padding: 14px 20px 20px 20px;
         border-style: solid solid none solid;
         border-width: 1px;
         border-color: #CCCCCC;
@@ -524,6 +524,19 @@ a:hover {
     }
 
     #contactFrm button.submit {
-        background-color: #ce2194;
-        color: white;
+        font-size: 14px;
+        color: #fff;
+        float:left;
+        width: 44px;
+        margin: 2% 0;
+        height: 21px;
+        border:1px solid #cecdcd;
+        -webkit-border-top-right-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        border-top-right-radius: 10px;
+        background: rgb(95,186,225);
+        background: -moz-linear-gradient(180deg, rgba(95,186,225,1) 10%, rgba(2,86,142,1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(95,186,225,1) 10%, rgba(2,86,142,1) 100%);
+        background: linear-gradient(180deg, rgba(95,186,225,1) 10%, rgba(2,86,142,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fbae1",endColorstr="#02568e",GradientType=1);
     }
